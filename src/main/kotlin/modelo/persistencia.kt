@@ -297,7 +297,7 @@ fun personaExiste(dni: String): Boolean {
 
 
 fun escribirLogControlador(mensaje:String){
-    val nombreArcvhio = "logs\\archivoControlador.log"
+    val nombreArcvhio = "C:\\Users\\juanj\\IdeaProjects\\modeloVistaExplorador\\logs\\archivoControlador.log"
 
     val archivo = File(nombreArcvhio)
 
@@ -314,7 +314,7 @@ fun escribirLogControlador(mensaje:String){
 }
 
 fun escribirLogVista(mensaje:String){
-    val nombreArcvhio = "logs\\archivoVista.log"
+    val nombreArcvhio = "C:\\Users\\juanj\\IdeaProjects\\modeloVistaExplorador\\logs\\archivoVista.log"
 
     val archivo = File(nombreArcvhio)
 
