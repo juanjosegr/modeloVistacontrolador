@@ -4,6 +4,9 @@ import vista.*
 import java.io.File
 import java.io.FileWriter
 import java.sql.*
+import java.sql.Date
+import java.text.SimpleDateFormat
+import java.util.*
 
 var connection: Connection = establecerConexion()
 val vista = Vista()
@@ -294,30 +297,35 @@ fun personaExiste(dni: String): Boolean {
 
 
 fun escribirLogControlador(mensaje:String){
-    val nombreArcvhio = "archivoControlador.log"
+    val nombreArcvhio = "logs\\archivoControlador.log"
 
     val archivo = File(nombreArcvhio)
 
     //Abre el archivo en modo de adicion
     val escritor = FileWriter(archivo,true)
 
+    val formatoFechaHora = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+    val fechaHoraActual = formatoFechaHora.format(java.util.Date())
     //Ahora puedes escribir contenido en el archivo sin sobreescribirlo
-    val contenido = mensaje + "\n"
+    val contenido = "$fechaHoraActual - $mensaje\n"
     escritor.write(contenido)
 
     escritor.close()
 }
 
 fun escribirLogVista(mensaje:String){
-    val nombreArcvhio = "archivoVista.log"
+    val nombreArcvhio = "logs\\archivoVista.log"
 
     val archivo = File(nombreArcvhio)
+
+    val formatoFechaHora = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+    val fechaHoraActual = formatoFechaHora.format(java.util.Date())
 
     //Abre el archivo en modo de adicion
     val escritor = FileWriter(archivo,true)
 
     //Ahora puedes escribir contenido en el archivo sin sobreescribirlo
-    val contenido = mensaje + "\n"
+    val contenido = "$fechaHoraActual - $mensaje\n"
     escritor.write(contenido)
 
     escritor.close()

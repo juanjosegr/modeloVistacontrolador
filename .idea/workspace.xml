@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5132471b-b821-4405-b983-fd0791f52ea6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modeloVistaExplorador.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controlador/Controlador.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Personas.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/baseDatos.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/vista/Vista.kt" afterDir="false" />
+    <list default="true" id="5132471b-b821-4405-b983-fd0791f52ea6" name="Changes" comment="xd">
+      <change afterPath="$PROJECT_DIR$/logs/archivoControlador.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/archivoVista.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivoControlador.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/archivoVista.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/persistencia.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +31,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2XwfHxidTfbC5vKzLOSEU6lFQV1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -69,7 +63,27 @@
       <option name="presentableId" value="Default" />
       <updated>1699544979686</updated>
     </task>
+    <task id="LOCAL-00001" summary="xd">
+      <created>1699551066389</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699551066389</updated>
+    </task>
+    <task id="LOCAL-00002" summary="xd">
+      <created>1699551077434</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699551077434</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="xd" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
