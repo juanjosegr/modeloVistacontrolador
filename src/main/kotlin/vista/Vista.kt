@@ -15,7 +15,6 @@ class Vista {
      * @return Un entero que representa la opción seleccionada por el usuario o nulo si no es un número válido.
      */
     fun inicializarMenu(): Int? {
-
         println(
             """
             Dime que deseas hacer:
@@ -27,7 +26,9 @@ class Vista {
             
         """.trimIndent()
         )
-        return readln().toIntOrNull()
+        val lecturaMenu: Int? = readln().toIntOrNull()
+        escribirLogVista("Lecuta de menu introducida: $lecturaMenu")
+        return lecturaMenu
     }
 
     /**
@@ -45,7 +46,9 @@ class Vista {
             
         """.trimIndent()
         )
-        return readln().toIntOrNull()
+        val lecturaMenu: Int? = readln().toIntOrNull()
+        escribirLogVista("Lecuta de Submenu introducida: $lecturaMenu")
+        return lecturaMenu
     }
 
     /**
@@ -119,9 +122,12 @@ class Vista {
      * @return El DNI de la persona a modificar ingresado por el usuario.
      */
     fun almacenarDniModificar(): String {
+        val dniModificar: String
         imprimirDniPersona()
         println("Dime la persona a modificar.\n")
-        return readln()
+        dniModificar = readln()
+        escribirLogVista("Dni introducido $dniModificar")
+        return dniModificar
     }
 
     /**
@@ -130,6 +136,7 @@ class Vista {
      * @return El DNI de la persona a modificar ingresado por el usuario.
      */
     fun modificarDniPersona(): String {
+        val dniModificar: String
 
         val dniPersona = obtenerDniPersona()
         for (dni in dniPersona) {
@@ -137,8 +144,9 @@ class Vista {
             escribirLogVista("Lectura de que hacer: \"$dni\"")
         }
         println("Dime el dni a modificar.\n")
-
-        return readln()
+        dniModificar = readln()
+        escribirLogVista("Dni introducido $dniModificar")
+        return dniModificar
 
     }
 
@@ -148,8 +156,12 @@ class Vista {
      * @return El nuevo nombre de la persona ingresado por el usuario.
      */
     fun obtenerNuevoNombre(): String {
+        val dniModificar: String
+
         println("Dime el nuevo nombre de la persona.\n ")
-        return readln()
+        dniModificar = readln()
+        escribirLogVista("Nombre introducido $dniModificar")
+        return dniModificar
     }
 
 
