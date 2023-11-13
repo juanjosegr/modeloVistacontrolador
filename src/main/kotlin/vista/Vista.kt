@@ -26,9 +26,9 @@ class Vista {
             
         """.trimIndent()
         )
-        val lecturaMenu: Int? = readln().toIntOrNull()
+        val lecturaMenu = readln()
         escribirLogVista("Lecuta de menu introducida: $lecturaMenu")
-        return lecturaMenu
+        return lecturaMenu.toIntOrNull()
     }
 
     /**
@@ -46,9 +46,9 @@ class Vista {
             
         """.trimIndent()
         )
-        val lecturaMenu: Int? = readln().toIntOrNull()
+        val lecturaMenu= readln()
         escribirLogVista("Lecuta de Submenu introducida: $lecturaMenu")
-        return lecturaMenu
+        return lecturaMenu.toIntOrNull()
     }
 
     /**
